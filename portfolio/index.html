@@ -1,0 +1,763 @@
+<!DOCTYPE html
+<html lang="en">
+<head>
+    <meta charset="UTF-8">        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> 
+    <script src="script.js" defer></script>
+    <script src="postcss.config.js"></script>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script>document.documentElement.classList.add('js')</script>
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js" defer></script>
+    
+</head>
+
+<body class= "h-full w-full font-serif bg-black flex justify-center">
+    
+    <!-- Navbar -->
+    <nav class="fixed w-full top-0 z-50 flex justify-between items-center px-10 py-4">
+        <div class="w-full max-w-6xl m-auto">
+            <div class="w-full flex justify-between items-center">
+        
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <img src="clover.png" alt="Logo" class="h-10 w-10">
+                <p class="text-purple-500 text-base md:text-lg font-bold">My Portfolio</p>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-6">
+                <a href="#home" class="text-white hover:text-purple-500 transition duration-300">Home</a>
+                <a href="#about" class="text-white hover:text-purple-500 transition duration-300">About</a>
+                <a href="#skills" class="text-white hover:text-purple-500 transition duration-300">Skills</a>
+                <a href="#projects" class="text-white hover:text-purple-500 transition duration-300">Projects</a>
+                <a href="#contact" class="text-white hover:text-purple-500 transition duration-300">Contact</a>
+            </div>
+             
+            <!-- Menu Button -->
+            <button id="menu-btn" class="md:hidden text-purple-500 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            </div>
+
+             <!-- Mobile Menu -->
+            <div id="menu" class="hidden md:hidden flex justify-end px-10">
+                <div class="flex flex-col items-center border-2 border-purple-500 rounded-lg w-[200px] p-2 text-base bg-black">
+                    <a href="#home" class="block text-white hover:text-purple-500">Home</a>
+                    <a href="#about" class="block text-white hover:text-purple-500">About</a>
+                    <a href="#skills" class="block text-white hover:text-purple-500">About</a>
+                    <a href="#projects" class="block text-white hover:text-purple-500">Projects</a>
+                    <a href="#contact" class="block text-white hover:text-purple-500">Contact</a>
+                </div>
+            </div>
+         </div>
+    </nav>
+
+     <!-- Main Content -->
+    <main class="w-full">
+
+        <!-- Home -->
+        <section id="home" class="w-full h-fit p-10">
+        
+            <div class="max-w-6xl grid md:grid-cols-2 grid-rows-auto gap-3 md:gap-10 m-auto delay-[500ms] [animation-iteration-count:infinite] duration-[600ms] taos:scale-[0.8] taos:opacity-0" data-taos-offset="100">
+                
+                <!-- Profile Image -->
+                <div class="flex w-full justify-center">
+                    <img src="pic1.png" alt="" class=" w-auto h-[300px] md:h-[500px]">
+                </div>
+                
+                <!-- Intro -->
+                <div class="md:pt-5">
+
+                    <div class="md:mt-20 mt-1 place-items-center md:place-items-start">
+                        <h1 class="flex text-4xl md:text-6xl text-white font-bold">Hi! It's <span class="text-purple-500 ml-2">Janel</span> </h1>
+                        <h2 class="text-white text-2xl md:text-4xl pb-2 md:pb-5">I'm a <span id="typewriter" class="ml-2 text-purple-500"></span> </h2>
+                        <p class="text-sm text-purple-200 text-justify pb-5">A web development enthusiast who loves bringing ideas to life through code. I enjoy creating clean, responsive, and visually appealing websites that focus on great user experience. I’m passionate about learning new technologies and improving my skills as I continue to grow as a developer</p>
+                    </div>
+
+                    <div class="flex space-x-4 mb-5 md:mb-10 justify-center md:justify-start">
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/janel-lariba" target="_blank"
+                            class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-purple-500 text-gray-300 hover:bg-purple-500 hover:text-black hover:shadow-[0_0_20px_#3b82f6] transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764 0-.975.784-1.765 1.75-1.765s1.75.79 1.75 1.765c0 .974-.784 1.764-1.75 1.764zm13.5 11.268h-3v-5.604c0-1.336-.027-3.056-1.861-3.056-1.861 0-2.146 1.453-2.146 2.957v5.703h-3v-10h2.885v1.367h.041c.402-.762 1.385-1.562 2.849-1.562 3.047 0 3.607 2.006 3.607 4.616v5.579z"/>
+                            </svg>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/janellariba" target="_blank"
+                            class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-purple-500 text-gray-300 hover:bg-purple-500 hover:text-black hover:shadow-[0_0_20px_#3b82f6] transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://web.facebook.com/janel.lariba/"
+                            class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-purple-500 text-gray-300 hover:bg-purple-500 hover:text-black hover:shadow-[0_0_20px_#3b82f6] transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Button for Resume -->
+                    <div class="flex justify-center">
+                        <button id="downloadRes" class="bg-transparent border-2 border-purple-500 hover:bg-purple-500 text-white text-xs md:text-sm py-2 px-4 rounded-full hover:shadow-[0_0_20px_#3b82f6]">Download My Resume</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- About -->
+        <section id="about" class="w-full h-fit p-10">
+
+            <div class="max-w-6xl grid md:grid-cols-2 gap-10 m-auto">
+
+                <!-- Skill details -->
+                 <div class="w-full grid grid-rows-2 gap-5 md:pt-10 delay-[200ms] [animation-iteration-count:infinite] duration-[500ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="200">
+
+                    <!-- top details -->
+                    <div class="w-full h-fit">
+                        <h1 class="flex justify-center text-purple-500 md:text-3xl text-2xl font-bold pb-5">About Me</h1>
+                        <p class="md:text-sm text-xs text-purple-200 text-justify">During my college years in Computer Engineering, I discovered my passion for coding and developing innovative solutions. I started with small projects and gradually explored web development, IoT, and AI. My internship experience, where I helped create an inventory management system using Laravel, strengthened my front-end development skills and taught me the importance of teamwork and problem-solving. One of my most significant achievements was working on ThirdVision, a research project focused on real-time threat detection using AI and pose analysis, a project that deepened my interest in artificial intelligence and its real-world applications.</p>
+                    </div>
+
+                    <!-- bottom details  -->
+                    <div class="w-full grid grid-cols-2">
+
+                        <!-- Left Side -->
+                        <div class="md:pt-5">
+                            
+                            <ol class="relative border-s border-gray-200 dark:border-gray-700"> 
+                                
+                                <!-- Web Development -->
+                                <li class="mb-2 ms-2">
+                                    <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                                    <h3 class="flex text-xs md:font-semibold text-gray-900 dark:text-white pb-2 ">WEB DEVELOPMENT</h3>
+                                    <p class="flex text-xs md:font-normal text-gray-500 dark:text-gray-400">HTML,CSS, PHP, Bootstrap, Laravel, MySQL</p>
+                                </li>
+                            
+                                <!-- Computer Vision     -->
+                                <li class="mb-2 ms-2">
+                                    <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                                    <h3 class="flex text-xs md:font-semibold text-gray-900 dark:text-white pb-2 ">COMPUTER VISION</h3>
+                                    <p class="flex text-xs font-normal text-gray-500 dark:text-gray-400">YOLOv8</p>
+                                </li>
+                                
+                                <!-- IoT -->
+                                <li class="mb-2 ms-2">
+                                    <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                                    <h3 class="flex text-xs md:font-semibold text-gray-900 dark:text-white pb-2 ">INTERNET OF THINGS (IoT)</h3>
+                                    <p class="flex text-xs md:font-normal text-gray-500 dark:text-gray-400">Arduino Uno, ESP32 and Raspberry Pi</p>
+                                </li>
+
+                                <!-- PLC and CAD  -->
+                                <li class="mb ms-2">
+                                    <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                                    <h3 class="flex text-xs md:font-semibold text-gray-900 dark:text-white pb-2 ">PLC & CAD</h3>
+                                    <p class="flex text-xs md:font-normal text-gray-500 dark:text-gray-400">FluidSim and AutoCAD</p>
+                                </li>
+                            </ol> 
+                        </div>
+
+                        <!-- Right Side -->
+                        <div class="">
+
+                            <div class="flex justify-center pb-2">
+                                 <h1 class="text-purple-500 text-base font-semi-bold">Academic Projects</h1>
+                            </div>
+
+                            <div class="w-full h-fit">
+                                <ul class="pb-2">
+                                    <li class="border-2 border-purple-500 rounded-lg p-2 mb-2"><h1 class="text-purple-500 text-xs">ThirdVision (Thesis)</h1></li>
+                                    <li class="border-2 border-purple-500 rounded-lg p-2 mb-2"><h1 class="text-purple-500 text-xs">GameRental IMS (OJT)</h1></li>
+                                    <li class="border-2 border-purple-500 rounded-lg p-2 mb-2"><h1 class="text-purple-500 text-xs">Student Management System</h1></li>  
+                                </ul>
+
+                                 <div class="flex justify-center bg-purple-500 rounded-lg p-2 hover:shadow-[0_0_20px_#3b82f6]">
+                                    <a href="#projects" class="text-black md:text-base text-sm">Learn More</a>
+                                </div>
+                            </div>
+                        </div> 
+
+                    </div>         
+                </div>
+      
+                <!-- Carousel -->
+                 <div class="w-full m-auto delay-[500ms] [animation-iteration-count:infinite] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="200">
+                     <h1 class="flex justify-center text-purple-500 text-xl font-bold md:pt-10 pb-5">Projects and College Highlights</h1>
+
+                    <div id="indicators-carousel" class="relative w-full h-fit " data-carousel="static">
+                    
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+
+                            <!-- Item 1 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                                <img src="pic2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="pic3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="pic4.jpg" class="bg-green-500 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="pic5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="pic6.jpg" class="bg-purple-500 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            </div>
+                        </div>
+                        <!-- Slider indicators -->
+                        <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+
+                        </div>
+                        <!-- Slider controls -->
+                        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-black group-hover:white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-purple-500 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-black group-hover:white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-purple-500 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button> 
+                                
+                    </div>
+                    
+                    
+                        <p class="flex justify-center text-gray-400 text-xs font-thin py-5">Showcasing the milestones and experiences that built my foundation in web development and engineering.</p>
+                 </div>  
+            </div>
+
+        </section>
+
+        <!-- Skills  -->
+         <section id="skills" class="w-full h-fit p-10 bg-purple-800">
+
+            <div class="max-w-6xl m-auto">
+
+                <div class="w-full grid md:grid-cols-2 grid-rows-auto gap-5 place-items-center">
+
+                    <!-- Image -->
+                    <div class="">
+                         <img src="pic7.jpg" alt="" class="w-full md:h-auto">
+                    </div>
+
+                    <!-- Skill Details -->
+                    <div class="w-full">
+                        <h1 class="text-purple-200 md:text-3xl text-2xl font-bold text-center pb-5">Skills </h1>
+
+                        <div class="grid grid-cols-1 gap-4 py-4">
+
+                            <!-- CARD 1 -->
+                            <div onclick="toggleDetails('details1')" class="bg-purple-400 rounded-lg p-4 rounded-lg cursor-pointer shadow-lg text-white w-full hover:shadow-[0_0_20px_#3b82f6] delay-[500ms] [animation-iteration-count:infinite] duration-[1000ms] taos:opacity-0">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h2 class="md:text-lg text-base md:font-bold">PROGRAMMING LANGUAGES</h2>
+                                    </div>
+                                    <!-- Arrow icon -->
+                                    <svg id="arrow-details1" class="w-6 h-6 transition-transform duration-300"
+                                        fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+
+                                <div id="details1" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                    <p class="md:text-sm text-xs text-justify p-2">I specialize in front-end web development, where I focus on building responsive and user-friendly interfaces. Through my learning journey, I gained experience in designing clean layouts and interactive web pages. I also explored backend development and database handling to improve my overall understanding of web systems. These programming languages helped me develop strong problem-solving skills and adaptability in different project requirements.</p>
+                                    <p class="md:text-sm text-xs text-justify px-2">Tools Used:</p>
+                                    <ul class="list-disc pl-5 space-y-1 md:text-sm text-xs">
+                                        <li>HTML</li>
+                                        <li>TailWind CSS</li>
+                                        <li>PHP</li>
+                                        <li>Laravel</li>
+                                        <li>MySQL</li>
+                                        <li>Python</li>
+                                        <li>Basic C++ and C#</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- CARD 2 -->
+                            <div onclick="toggleDetails('details2')" class="bg-purple-500 p-4 rounded-lg cursor-pointer shadow-lg text-white w-full hover:shadow-[0_0_20px_#3b82f6] delay-[600ms] [animation-iteration-count:infinite] duration-[1000ms] taos:opacity-0" >
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h2 class="md:text-lg text-base md:font-bold">ARTIFICIAL INTELLIGENCE</h2>
+                                    </div>
+                                    <svg id="arrow-details2" class="w-6 h-6 transition-transform duration-300"
+                                        fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+
+                                <div id="details2" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                    <p class="md:text-sm text-xs text-justify p-2">I have hands-on experience in applying Artificial Intelligence through my thesis work, where I focused on computer vision and deep learning. I worked extensively with the YOLOv8 algorithm, handling the full AI pipeline—from dataset preparation to model evaluation. My role included collecting raw datasets, applying preprocessing techniques, and performing advanced data augmentation to improve model robustness and accuracy.</p>
+                                    <p class="md:text-sm text-xs text-justify px-2">Key Achievements using YOLOv8:</p>
+                                    <ul class="list-disc pl-5 space-y-1 md:text-sm text-xs">
+                                        <li>Achieved 96% detection accuracy for weapon detection</li>
+                                        <li>Achieved 92% accuracy for human pose-based threat analysis</li>
+                                        <li>Achieved 95% detection accuracy for face mask classification</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- CARD 3 -->
+                            <div onclick="toggleDetails('details3')" class="bg-purple-600 p-4 rounded-lg cursor-pointer shadow-lg text-white w-full hover:shadow-[0_0_20px_#3b82f6] delay-[700ms] [animation-iteration-count:infinite] duration-[1000ms] taos:opacity-0">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h2 class="md:text-lg text-base md:font-bold">EMBEDDED SYSTEM</h2>
+                                    </div>
+                                    <svg id="arrow-details3" class="w-6 h-6 transition-transform duration-300"
+                                        fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+
+                                <div id="details3" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                    <p class="md:text-sm text-xs text-justify p-2">I have practical experience in embedded systems development, combining hardware and software to build functional and intelligent prototypes. I worked on real-time applications involving sensor integration, microcontroller programming, and wireless communication for automation and IoT-based systems. I also gained experience deploying small-scale AI and monitoring features on microcontroller platforms to enhance system functionality.</p>
+                                    <p class="md:text-sm text-xs text-justify px-2">Development Boards Used:</p>
+                                    <ul class="list-disc pl-5 space-y-1 md:text-sm text-xs">
+                                        <li>Arduino Uno</li>
+                                        <li>ESP32</li>
+                                        <li>Raspberry Pi</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- CARD 4 -->
+                            <div onclick="toggleDetails('details4')" class="bg-purple-700 p-4 rounded-lg cursor-pointer shadow-lg text-white w-full hover:shadow-[0_0_20px_#3b82f6] delay-[800ms] [animation-iteration-count:infinite] duration-[1000ms] taos:opacity-0">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h2 class="md:text-base text-xs md:font-bold">COMPUTER AIDED DRAFTING & PROGRAMMABLE LOGIC CONTROLLER(PLC)</h2>
+                                    </div>
+                                    <svg id="arrow-details4" class="w-6 h-6 transition-transform duration-300"
+                                        fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+
+                                <div id="details4" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                    <p class="md:text-sm text-xs text-justify p-2">I was first introduced to AutoCAD during high school, where I learned to create precise 2D technical drawings and engineering layouts. I later advanced to SolidWorks for 3D mechanical design, allowing me to develop detailed components and visual prototypes. I also gained foundational knowledge in Programmable Logic Controllers (PLC), where I practiced building automation circuits and control systems using FluidSIM with pneumatic simulations.</p>
+                                    <p class="md:text-sm text-xs text-justify px-2">Tools Used:</p>
+                                    <ul class="list-disc pl-5 space-y-1 md:text-sm text-xs">
+                                        <li>AutoCAD</li>
+                                        <li>SolidWorks</li>
+                                        <li>FluidSIM</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                   
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Projects -->
+         <section id="projects" class="w-full h-fit p-10">
+
+            <div class="max-w-6xl h-fit m-auto delay-[400ms] duration-[600ms] [animation-iteration-count:infinite] taos:scale-[0.8] taos:opacity-0" data-taos-offset="100">
+
+                <!-- Header for Projects -->
+                <div class="flex justify-center">
+                    <h1 class="text-purple-500 md:text-3xl text-2xl font-bold">Projects</h1>
+                </div>
+
+                <!-- Expanding Cards -->
+                <div class="w-full h-fit p-10">
+
+                    <div class="flex w-full h-96 overflow-hidden rounded-xl shadow-xl">
+                        
+                        <div class="card relative flex-1 transition-all duration-500 ease-in-out cursor-pointer group" onclick="expandCard(0)">
+                            <img src="vid1.gif" class="w-full h-full object-cover rounded-xl" alt="">
+                            <div class="absolute inset-0 bg-black/40 text-white opacity-0 group-hover:opacity-100 transition">
+                                <!-- 01   -->
+                                <div class="p-2 md:p-5 flex h-fit">
+                                    <h1 class="flex justify-center text-white text-2xl md:text-5xl font-bold">01</h1>
+                                    <p class="text-white md:text-xl text-xs font-bold text-center pt-2">GAME RENTAL INVENTORY MANAGEMENT SYSTEM</p>
+                                </div>
+                                <!-- 01 Details -->
+                                <div class="grid md:grid-cols-2 grid-rows-2 gap-5 h-fit md:px-10 px-2"> 
+
+                                    <div class="">
+                                        <h1 class="text-purple-500 text-white font-bold text-center pb-2 text-xs md:text-base">System Function</h1>
+                                        <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                         Developed using Laravel, Tailwind CSS, and MySQL.
+                                        </p>
+                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                           Manages and tracks game rentals and returns efficiently.
+                                        </p>
+                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                            Monitors item availability to prevent overbooking.
+                                        </p>
+                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                            Provides responsive, user-friendly interface for easy navigation.
+                                        </p>
+                                        <div class="pt-2 flex align-center justify-center place-content-end md:hidden">
+                                            <a href="https://www.canva.com/design/DAGMq8LJ47k/YCZo-IOxLMN5Trw8ps8hyg/edit?utm_content=DAGMq8LJ47k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="h-auto bg-purple-500 p-2 rounded-lg text-xs hover:shadow-[0_0_20px_#3b82f6] transition duration-300">See Project</a>
+                                        </div>   
+                                    </div>
+                                    
+                                    <div class="bg-transparent opa border-2 border-purple-500 rounded-lg p-4 hidden md:block">
+                                        
+                                        <div class="flex flex-col items-center text-center">
+                                            <svg class="w-20 h-20 text-gray-800 dark:text-purple-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                                            </svg>
+ 
+                                            <h1 class="text-purple-500 font-bold text-lg">Frontend Developer</h1>
+                                            <p class="text-white text-[10px] pb-1">Role</p>
+                                            <p class="text-purple-200 text-xs font-thin text-justify pb-4">Assigned to design a responsive and user-friendly interface for the Game Rental Management System.</p>
+                                        </div>
+   
+
+                                        <div class="flex justify-center gap-2">
+                                        
+                                        <a href="https://www.canva.com/design/DAGMq8LJ47k/YCZo-IOxLMN5Trw8ps8hyg/edit?utm_content=DAGMq8LJ47k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+                                        class="h-auto bg-purple-500 p-2 rounded-lg text-xs text-center hover:shadow-[0_0_20px_#3b82f6]">See Project</a>
+                                        </div>
+
+                                    </div>
+                                        
+                                </div> 
+                            </div>
+                        </div>
+
+                        <div class="card relative flex-1 transition-all duration-500 ease-in-out cursor-pointer group" onclick="expandCard(1)">
+                            <img src="vid2.gif" class="w-full h-full object-cover rounded-xl" alt="">
+                            <div class="absolute inset-0 bg-black/40 text-white opacity-0 group-hover:opacity-100 transition">
+                                <!-- 02   -->
+                                <div class="p-5 flex h-fit align-center">
+                                    <h1 class="flex justify-center text-white text-2xl md:text-5xl font-bold pr-3">02</h1>
+                                    <p class="text-white md:text-2xl text-xs font-bold md:pt-3 pt-2 flex">THIRDVISION</p>
+                                </div>
+                                <!-- 02 Details -->
+                                <div class="grid md:grid-cols-2 grid-rows-2 gap-5 h-fit md:px-10 px-2"> 
+
+                                    <div class="">
+                                        <h1 class="text-purple-500 text-white font-bold text-center pb-2 text-xs md:text-base">System Function</h1>
+                                        <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                         Employs YOLOv8 for accurate weapon, pose, and facemask detection in real-time.
+                                        </p>
+                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                         Analyzes aggressor and victim postures to assess potential threats.
+                                        </p>
+                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                        Integrates dynamic dataset augmentation to enhance detection reliability.
+                                        </p>
+                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                        Provides real-time alerts and visuals for police to ensure proactive security.
+                                        </p>
+                                        <div class="pt-2 flex align-center justify-center place-content-end md:hidden">
+                                            <a href="https://thirdvision.vercel.app/" class="h-auto bg-purple-500 p-2 rounded-lg text-xs hover:shadow-[0_0_20px_#3b82f6] transition duration-300">See Project</a>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="bg-transparent opa border-2 border-purple-500 rounded-lg p-4 hidden md:block">
+                                        
+                                        <div class="flex flex-col items-center text-center"> 
+                                            <svg class="w-20 h-20 text-gray-800 dark:text-purple-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                                            </svg>
+ 
+                                            <h1 class="text-purple-500 font-bold text-lg">AI Model Trainer</h1>
+                                            <p class="text-white text-[10px] pb-1">Role</p>
+                                            <p class="text-purple-200 text-xs font-thin text-justify pb-4">Responsible for training the YOLOv8 model for weapon, facemask and pose detection in the ThirdVision system.</p>
+                                        </div>
+   
+
+                                        <div class="flex justify-center gap-2">
+                                        
+                                        <a href="https://thirdvision.vercel.app/" 
+                                        class="h-auto bg-purple-500 p-2 rounded-lg text-xs text-center hover:shadow-[0_0_20px_#3b82f6]">See Project</a>
+                                        </div>
+
+                                    </div>
+                                        
+                                </div> 
+                            </div>
+                        </div>
+
+                        <div class="card relative flex-1 transition-all duration-500 ease-in-out cursor-pointer group" onclick="expandCard(2)">
+                            <img src="vid3.gif" class="w-full h-full object-cover rounded-xl" alt="">
+                            <div class="absolute inset-0 bg-black/40 text-white opacity-0 group-hover:opacity-100 transition">
+                                <!-- 03   -->
+                                <div class="p-4 md:p-5 flex h-fit align-center">
+                                    <h1 class="flex justify-center text-white text-2xl md:text-5xl font-bold pr-3">03</h1>
+                                    <p class="text-white md:text-2xl text-xs font-bold md:pt-3 pt-2 flex">STUDENT MANAGEMENT SYSTEM</p>
+                                </div>
+                                <!-- 03 Details -->
+                                <div class="grid md:grid-cols-2 grid-rows-2 gap-5 h-fit md:px-10 px-2"> 
+
+                                    <div class="">
+                                        <h1 class="text-purple-500 text-white font-bold text-center pb-2 text-xs md:text-base">System Function</h1>
+                                        <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                         Developed using PHP, MySQL, HTML, and CSS with full CRUD functionality
+                                        </p>
+                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                         Manages student records with add, edit, and delete features.
+                                        </p>
+                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                         Features a clean, user-friendly interface for easy navigation.
+                                        </p>
+                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                         Focused on web development and database management skills.
+                                        </p>
+                                        <div class="pt-2 flex align-center justify-center place-content-end md:hidden">
+                                            <a href="https://github.com/janellariba" class="h-auto bg-purple-500 p-2 rounded-lg text-xs hover:shadow-[0_0_20px_#3b82f6] transition duration-300">See Project</a>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="bg-transparent opa border-2 border-purple-500 rounded-lg p-4 hidden md:block">
+                                        
+                                        <div class="flex flex-col items-center text-center"> 
+                                            <svg class="w-20 h-20 text-gray-800 dark:text-purple-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                                            </svg>
+ 
+                                            <h1 class="text-purple-500 font-bold text-lg">Web Developer</h1>
+                                            <p class="text-white text-[10px] pb-1">Role</p>
+                                            <p class="text-purple-200 text-xs font-thin text-justify pb-4">Assigned to develop and design the Student Management System with essential features for managing and updating student records efficiently.</p>
+                                        </div>
+   
+
+                                        <div class="flex justify-center gap-2">
+                                        
+                                        <a href="https://github.com/janellariba" 
+                                        class="h-auto bg-purple-500 p-2 rounded-lg text-xs text-center hover:shadow-[0_0_20px_#3b82f6]">See Project</a>
+                                        </div>
+
+                                    </div>
+                                        
+                                </div> 
+                            </div>
+                        </div>
+                      
+                        <div class="card relative flex-1 transition-all duration-500 ease-in-out cursor-pointer group" onclick="expandCard(3)">
+                            <img src="vid4.gif" class="w-full h-full object-cover rounded-xl" alt="">
+                           <div class="absolute inset-0 bg-black/40 text-white opacity-0 group-hover:opacity-100 transition">
+                                <!-- 04   -->
+                                <div class="p-4 md:p-5 flex h-fit align-center">
+                                    <h1 class="flex justify-center text-white text-2xl md:text-5xl font-bold pr-3">04</h1>
+                                    <p class="text-white md:text-2xl text-xs font-bold md:pt-3 pt-2 flex text-center">RECREATION OF JIMDO WEBSITE</p>
+                                </div>
+                                <!-- 04 Details -->
+                                <div class="grid md:grid-cols-2 grid-rows-2 gap-5 h-fit md:px-10 px-2"> 
+
+                                    <div class="">
+                                        <h1 class="text-purple-500 text-white font-bold text-center pb-2 text-xs md:text-base">System Function</h1>
+                                        <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                         The website has a responsive layout that adapts to all screen sizes.
+                                        </p>
+                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                         Users can easily navigate through multiple pages with a clear menu.
+                                        </p>
+                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                         Content like images and text is displayed in a clean, organized way.
+                                        </p>
+                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                         It replicates the Jimdo website with consistent styling and interactive elements.
+                                        </p>
+                                        <div class="pt-2 flex align-center justify-center place-content-end md:hidden">
+                                            <a href="https://github.com/janellariba" class="h-auto bg-purple-500 p-2 rounded-lg text-xs hover:shadow-[0_0_20px_#3b82f6] transition duration-300">See Project</a>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="bg-transparent opa border-2 border-purple-500 rounded-lg p-4 hidden md:block">
+                                        
+                                        <div class="flex flex-col items-center text-center"> 
+                                            <svg class="w-20 h-20 text-gray-800 dark:text-purple-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                                            </svg>
+ 
+                                            <h1 class="text-purple-500 font-bold text-lg">UI/UX Developer</h1>
+                                            <p class="text-white text-[10px] pb-1">Role</p>
+                                            <p class="text-purple-200 text-xs font-thin text-justify pb-4">Designed and developed a replica of the Jimdo website with a focus on layout consistency, clean interface, and user-friendly navigation across all pages.</p>
+                                        </div>
+   
+
+                                        <div class="flex justify-center gap-2">
+                                        
+                                        <a href="https://github.com/janellariba" 
+                                        class="h-auto bg-purple-500 p-2 rounded-lg text-xs text-center hover:shadow-[0_0_20px_#3b82f6]">See Project</a>
+                                        </div>
+
+                                    </div>
+                                        
+                                </div> 
+                            </div>
+                        </div>
+
+                        <div class="card relative flex-1 transition-all duration-500 ease-in-out cursor-pointer group" onclick="expandCard(4)">
+                            <img src="vid5.gif" class="w-full h-full object-cover rounded-xl" alt="">
+                            <div class="absolute inset-0 bg-black/40 text-white opacity-0 group-hover:opacity-100 transition">
+                                <!-- 05   -->
+                                <div class="p-2 md:p-5 flex h-fit align-center">
+                                    <h1 class="flex justify-center text-white text-2xl md:text-5xl font-bold pr-3">05</h1>
+                                    <p class="text-white md:text-2xl text-xs font-bold md:pt-3 pt-2 flex text-center">ARDUINO-BASED REAL-TIME PET TRACKING VEST SYSTEM</p>
+                                </div>
+                                <!-- 05 Details -->
+                                <div class="grid md:grid-cols-2 grid-rows-2 gap-5 h-fit md:px-10 px-2"> 
+
+                                    <div class="">
+                                        <h1 class="text-purple-500 text-white font-bold text-center pb-2 text-xs md:text-base">System Function</h1>
+                                        <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                         Tracks the pet’s real-time location using GPS and Arduino.
+                                        </p>
+                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                         Sends alerts when the pet goes beyond the set boundary.
+                                        </p>
+                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                         Displays live location through a connected mobile app.
+                                        </p>
+                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
+                                         Monitors system status to ensure continuous tracking.
+                                        </p>
+                                        <div class="pt-2 flex align-center justify-center place-content-end md:hidden">
+                                            <a href="https://docs.google.com/document/d/1AlWbyeD13EHA_pR-n3JOEUNwEIgP_oP1pnswIosT6w4/edit?usp=sharing" class="h-auto bg-purple-500 p-2 rounded-lg text-xs hover:shadow-[0_0_20px_#3b82f6] transition duration-300">See Project</a>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="bg-transparent opa border-2 border-purple-500 rounded-lg p-4 hidden md:block">
+                                        
+                                        <div class="flex flex-col items-center text-center"> 
+                                             <svg class="w-20 h-20 text-gray-800 dark:text-purple-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                                            </svg>
+ 
+                                            <h1 class="text-purple-500 font-bold text-lg">Web Developer</h1>
+                                            <p class="text-white text-[10px] pb-1">Role</p>
+                                            <p class="text-purple-200 text-xs font-thin text-justify pb-4">Assigned to develop the real-time pet tracking vest, integrating GPS and alert functions for pet monitoring.</p>
+                                        </div>
+   
+
+                                        <div class="flex justify-center gap-2">
+                                        
+                                        <a href="https://docs.google.com/document/d/1AlWbyeD13EHA_pR-n3JOEUNwEIgP_oP1pnswIosT6w4/edit?usp=sharing" 
+                                        class="h-auto bg-purple-500 p-2 rounded-lg text-xs text-center hover:shadow-[0_0_20px_#3b82f6]">See Project</a>
+                                        </div>
+
+                                    </div>
+                                        
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+         </section>
+
+         <!-- contact -->
+       <section id="contact" class="w-full h-fit p-10 bg-purple-800 ">
+            
+            <div class="max-w-6xl grid md:grid-cols-2 gap-10 m-auto md:p-10">
+                <div class="w-full place-items-center pt-10 delay-[50ms] [animation-iteration-count:infinite] duration-[600ms] taos:scale-[0.8] taos:opacity-0" data-taos-offset="100">
+                    <h1 class="text-purple-200 md:text-3xl text-2xl font-bold text-center border-b-4 border-purple-200 mb-5">Get in Touch</h1>
+                    <p class="md:text-base text-xs text-justify text-purple-200 pb-5">I'm currently open to new opportunities and collaborations. Whether you have a project in mind, want to discuss potential roles, or simply wish to connect, feel free to reach out. I look forward to hearing from you!</p>
+                    
+                    <div class="flex flex-1 gap-1 mb-2 justify-center pt-10">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="w-6 h-6 text-purple-500">
+                            <path fill="currentColor" d="M44 8H4c-1.1 0-2 .9-2 2v28c0 1.1.9 2 2 2h40c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 4l-20 14L4 12V10l20 14 20-14v2z"/>
+                        </svg>
+                         <p class="md:text-lg text-base text-justify text-purple-200">: laribajanel@gmail.com</p>
+                    </div>
+                
+                   
+                    <div class="flex space-x-4 mb-10 justify-center">
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/janel-lariba" target="_blank"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-purple-500 text-black hover:shadow-[0_0_20px_#3b82f6] transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764 0-.975.784-1.765 1.75-1.765s1.75.79 1.75 1.765c0 .974-.784 1.764-1.75 1.764zm13.5 11.268h-3v-5.604c0-1.336-.027-3.056-1.861-3.056-1.861 0-2.146 1.453-2.146 2.957v5.703h-3v-10h2.885v1.367h.041c.402-.762 1.385-1.562 2.849-1.562 3.047 0 3.607 2.006 3.607 4.616v5.579z"/>
+                            </svg>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/janellariba" target="_blank"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-purple-500 text-black text-black hover:bg-purple-500 hover:text-black hover:shadow-[0_0_20px_#3b82f6] transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://web.facebook.com/janel.lariba/"
+                            class="w-10 h-10 flex items-center justify-center rounded-full bg-purple-500 text-black text-black hover:bg-purple-500 hover:text-black hover:shadow-[0_0_20px_#3b82f6] transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+
+                </div>
+                        
+               
+                <!-- contact email -->
+                <div class="w-full h-96 border-2 border-purple-500 rounded-lg md:p-10 p-5 shadow-[0_0_20px_#3b82f6] bg-cover bg-center delay-[200ms] [animation-iteration-count:infinite] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="100" style="background-image: url('vid6.gif');">
+                    <h1 class="text-purple-200 md:text-3xl text-2xl font-bold text-center pb-5">Message Me</h1>
+
+                    <form action="https://api.web3forms.com/submit" method="POST" class="flex justify-center">
+                        <div class="w-full flex flex-col place-items-center px-10">
+                        <input type="hidden" name="access_key" value="b8f0bc97-bba3-4c2f-9305-206d3d2dce27">
+                          <input class="w-full border-2 rounded-lg border-purple-500 bg-transparent p-2 text-purple-200 focus:outline-none focus:bg-transparent mb-4" type="text" name="name" id="" placeholder="Full Name" size="50" required>  
+                          <input class="w-full border-2 rounded-lg border-purple-500 bg-transparent p-2 text-purple-200 focus:outline-none focus:bg-transparent mb-4" type="email" name="email" id="" placeholder="Email Address" size="50" required> 
+                          <textarea class="w-full h-fit border-2 rounded-lg border-purple-500 bg-transparent p-2 text-purple-200 focus:outline-none focus:bg-transparent mb-5" name="message" placeholder="Enter your message" required></textarea>
+                          <button type="submit" class="rounded-lg w-40 h- bg-purple-500 m-4 p-2 hover:bg-purple-800">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>            
+        </section>
+
+        <footer class="w-full h-fit bg-gray-800">
+            <div class="h-10 max-w-6xl m-auto p-3 flex justify-center">
+                <p class="text-sm text-purple-200 font-semi-bold ">
+                    &copy; 2025 Janel Lariba. All rights reserved.
+                </p>
+
+            </div>
+
+        </footer>
+
+    </main>
+</body>
+
+</html>

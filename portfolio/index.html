@@ -394,14 +394,15 @@
                 </div>
 
                 <!-- Expanding Cards -->
-                <div class="w-full h-fit p-10">
+                <div class="w-full h-fit p-10 hidden md:block">
 
                     <div class="flex w-full h-96 overflow-hidden rounded-xl shadow-xl">
                         
+                        <!-- 01 -->
                         <div class="card relative flex-1 transition-all duration-500 ease-in-out cursor-pointer group" onclick="expandCard(0)">
                             <img src="vid1.gif" class="w-full h-full object-cover rounded-xl" alt="">
                             <div class="absolute inset-0 bg-black/40 text-white opacity-0 group-hover:opacity-100 transition">
-                                <!-- 01   -->
+                
                                 <div class="p-2 md:p-5 flex h-fit">
                                     <h1 class="flex justify-center text-white text-2xl md:text-5xl font-bold">01</h1>
                                     <p class="text-white md:text-xl text-xs font-bold text-center pt-2">GAME RENTAL INVENTORY MANAGEMENT SYSTEM</p>
@@ -410,49 +411,39 @@
                                 <div class="grid md:grid-cols-2 grid-rows-2 gap-5 h-fit md:px-10 px-2"> 
 
                                     <div class="">
-                                        <h1 class="text-purple-500 text-white font-bold text-center pb-2 text-xs md:text-base">System Function</h1>
-                                        <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                         Developed using Laravel, Tailwind CSS, and MySQL.
-                                        </p>
-                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                           Manages and tracks game rentals and returns efficiently.
-                                        </p>
-                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                            Monitors item availability to prevent overbooking.
-                                        </p>
-                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                            Provides responsive, user-friendly interface for easy navigation.
-                                        </p>
-                                        <div class="pt-2 flex align-center justify-center place-content-end md:hidden">
-                                            <a href="https://www.canva.com/design/DAGMq8LJ47k/YCZo-IOxLMN5Trw8ps8hyg/edit?utm_content=DAGMq8LJ47k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="h-auto bg-purple-500 p-2 rounded-lg text-xs hover:shadow-[0_0_20px_#3b82f6] transition duration-300">See Project</a>
-                                        </div>   
+                                        <h1 class="text-purple-500 font-bold text-center pb-2 text-xs md:text-base">System Function</h1>
+
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Developed using Laravel, Tailwind CSS, and MySQL.</p>
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Manages and tracks game rentals and returns efficiently.</p>
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Monitors item availability to prevent overbooking.</p>
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Provides responsive, user-friendly interface for easy navigation.</p>
                                     </div>
-                                    
-                                    <div class="bg-transparent opa border-2 border-purple-500 rounded-lg p-4 hidden md:block">
+
+                                <div class="bg-transparent opa border-2 border-purple-500 rounded-lg p-4 hidden md:block">
                                         
-                                        <div class="flex flex-col items-center text-center">
-                                            <svg class="w-20 h-20 text-gray-800 dark:text-purple-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                                <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-                                            </svg>
+                                    <div class="flex flex-col items-center text-center">
+                                        <svg class="w-20 h-20 text-gray-800 dark:text-purple-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                                        </svg>
  
-                                            <h1 class="text-purple-500 font-bold text-lg">Frontend Developer</h1>
-                                            <p class="text-white text-[10px] pb-1">Role</p>
-                                            <p class="text-purple-200 text-xs font-thin text-justify pb-4">Assigned to design a responsive and user-friendly interface for the Game Rental Management System.</p>
-                                        </div>
+                                        <h1 class="text-purple-500 font-bold text-lg">Frontend Developer</h1>
+                                        <p class="text-white text-[10px] pb-1">Role</p>
+                                        <p class="text-purple-200 text-xs font-thin text-justify pb-4">Assigned to design a responsive and user-friendly interface for the Game Rental Management System.</p>
+                                    </div>
    
 
-                                        <div class="flex justify-center gap-2">
-                                        
-                                        <a href="https://www.canva.com/design/DAGMq8LJ47k/YCZo-IOxLMN5Trw8ps8hyg/edit?utm_content=DAGMq8LJ47k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
-                                        class="h-auto bg-purple-500 p-2 rounded-lg text-xs text-center hover:shadow-[0_0_20px_#3b82f6]">See Project</a>
-                                        </div>
-
+                                    <div class="flex justify-center gap-2">
+                                        <a href="https://www.canva.com/design/DAGMq8LJ47k/YCZo-IOxLMN5Trw8ps8hyg/edit?utm_content=DAGMq8LJ47k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="h-auto bg-purple-500 p-2 rounded-lg text-xs text-center hover:shadow-[0_0_20px_#3b82f6]">See Project</a>
                                     </div>
+
+                                </div>
                                         
                                 </div> 
+                                
                             </div>
                         </div>
 
+                        <!-- 02 -->
                         <div class="card relative flex-1 transition-all duration-500 ease-in-out cursor-pointer group" onclick="expandCard(1)">
                             <img src="vid2.gif" class="w-full h-full object-cover rounded-xl" alt="">
                             <div class="absolute inset-0 bg-black/40 text-white opacity-0 group-hover:opacity-100 transition">
@@ -464,24 +455,13 @@
                                 <!-- 02 Details -->
                                 <div class="grid md:grid-cols-2 grid-rows-2 gap-5 h-fit md:px-10 px-2"> 
 
-                                    <div class="">
-                                        <h1 class="text-purple-500 text-white font-bold text-center pb-2 text-xs md:text-base">System Function</h1>
-                                        <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                         Employs YOLOv8 for accurate weapon, pose, and facemask detection in real-time.
-                                        </p>
-                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                         Analyzes aggressor and victim postures to assess potential threats.
-                                        </p>
-                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                        Integrates dynamic dataset augmentation to enhance detection reliability.
-                                        </p>
-                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                        Provides real-time alerts and visuals for police to ensure proactive security.
-                                        </p>
-                                        <div class="pt-2 flex align-center justify-center place-content-end md:hidden">
-                                            <a href="https://thirdvision.vercel.app/" class="h-auto bg-purple-500 p-2 rounded-lg text-xs hover:shadow-[0_0_20px_#3b82f6] transition duration-300">See Project</a>
-                                        </div>
-                                        
+                                     <div class="">
+                                        <h1 class="text-purple-500 font-bold text-center pb-2 text-xs md:text-base">System Function</h1>
+
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Employs YOLOv8 for accurate weapon, pose, and facemask detection in real-time.</p>
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Analyzes aggressor and victim postures to assess potential threats.</p>
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Integrates dynamic dataset augmentation to enhance detection reliability.</p>
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Provides real-time alerts and visuals for police to ensure proactive security.</p>
                                     </div>
                                     
                                     <div class="bg-transparent opa border-2 border-purple-500 rounded-lg p-4 hidden md:block">
@@ -495,12 +475,9 @@
                                             <p class="text-white text-[10px] pb-1">Role</p>
                                             <p class="text-purple-200 text-xs font-thin text-justify pb-4">Responsible for training the YOLOv8 model for weapon, facemask and pose detection in the ThirdVision system.</p>
                                         </div>
-   
 
                                         <div class="flex justify-center gap-2">
-                                        
-                                        <a href="https://thirdvision.vercel.app/" 
-                                        class="h-auto bg-purple-500 p-2 rounded-lg text-xs text-center hover:shadow-[0_0_20px_#3b82f6]">See Project</a>
+                                            <a href="https://thirdvision.vercel.app/" class="h-auto bg-purple-500 p-2 rounded-lg text-xs text-center hover:shadow-[0_0_20px_#3b82f6]">See Project</a>
                                         </div>
 
                                     </div>
@@ -509,6 +486,7 @@
                             </div>
                         </div>
 
+                        <!-- 03 -->
                         <div class="card relative flex-1 transition-all duration-500 ease-in-out cursor-pointer group" onclick="expandCard(2)">
                             <img src="vid3.gif" class="w-full h-full object-cover rounded-xl" alt="">
                             <div class="absolute inset-0 bg-black/40 text-white opacity-0 group-hover:opacity-100 transition">
@@ -521,23 +499,12 @@
                                 <div class="grid md:grid-cols-2 grid-rows-2 gap-5 h-fit md:px-10 px-2"> 
 
                                     <div class="">
-                                        <h1 class="text-purple-500 text-white font-bold text-center pb-2 text-xs md:text-base">System Function</h1>
-                                        <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                         Developed using PHP, MySQL, HTML, and CSS with full CRUD functionality
-                                        </p>
-                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                         Manages student records with add, edit, and delete features.
-                                        </p>
-                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                         Features a clean, user-friendly interface for easy navigation.
-                                        </p>
-                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                         Focused on web development and database management skills.
-                                        </p>
-                                        <div class="pt-2 flex align-center justify-center place-content-end md:hidden">
-                                            <a href="https://github.com/janellariba" class="h-auto bg-purple-500 p-2 rounded-lg text-xs hover:shadow-[0_0_20px_#3b82f6] transition duration-300">See Project</a>
-                                        </div>
-                                        
+                                        <h1 class="text-purple-500 font-bold text-center pb-2 text-xs md:text-base">System Function</h1>
+
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Developed using PHP, MySQL, HTML, and CSS with full CRUD functionality</p>
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Manages student records with add, edit, and delete features.</p>
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Features a clean, user-friendly interface for easy navigation.</p>
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Focused on web development and database management skills.</p>
                                     </div>
                                     
                                     <div class="bg-transparent opa border-2 border-purple-500 rounded-lg p-4 hidden md:block">
@@ -554,9 +521,7 @@
    
 
                                         <div class="flex justify-center gap-2">
-                                        
-                                        <a href="https://github.com/janellariba" 
-                                        class="h-auto bg-purple-500 p-2 rounded-lg text-xs text-center hover:shadow-[0_0_20px_#3b82f6]">See Project</a>
+                                            <a href="https://github.com/janellariba" class="h-auto bg-purple-500 p-2 rounded-lg text-xs text-center hover:shadow-[0_0_20px_#3b82f6]">See Project</a>
                                         </div>
 
                                     </div>
@@ -564,7 +529,8 @@
                                 </div> 
                             </div>
                         </div>
-                      
+
+                        <!-- 04 -->
                         <div class="card relative flex-1 transition-all duration-500 ease-in-out cursor-pointer group" onclick="expandCard(3)">
                             <img src="vid4.gif" class="w-full h-full object-cover rounded-xl" alt="">
                            <div class="absolute inset-0 bg-black/40 text-white opacity-0 group-hover:opacity-100 transition">
@@ -577,23 +543,12 @@
                                 <div class="grid md:grid-cols-2 grid-rows-2 gap-5 h-fit md:px-10 px-2"> 
 
                                     <div class="">
-                                        <h1 class="text-purple-500 text-white font-bold text-center pb-2 text-xs md:text-base">System Function</h1>
-                                        <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                         The website has a responsive layout that adapts to all screen sizes.
-                                        </p>
-                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                         Users can easily navigate through multiple pages with a clear menu.
-                                        </p>
-                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                         Content like images and text is displayed in a clean, organized way.
-                                        </p>
-                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                         It replicates the Jimdo website with consistent styling and interactive elements.
-                                        </p>
-                                        <div class="pt-2 flex align-center justify-center place-content-end md:hidden">
-                                            <a href="https://github.com/janellariba" class="h-auto bg-purple-500 p-2 rounded-lg text-xs hover:shadow-[0_0_20px_#3b82f6] transition duration-300">See Project</a>
-                                        </div>
-                                        
+                                        <h1 class="text-purple-500 font-bold text-center pb-2 text-xs md:text-base">System Function</h1>
+
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">The website has a responsive layout that adapts to all screen sizes.</p>
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Users can easily navigate through multiple pages with a clear menu.</p>
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Content like images and text is displayed in a clean, organized way.</p>
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">It replicates the Jimdo website with consistent styling and interactive elements.</p>
                                     </div>
                                     
                                     <div class="bg-transparent opa border-2 border-purple-500 rounded-lg p-4 hidden md:block">
@@ -610,9 +565,7 @@
    
 
                                         <div class="flex justify-center gap-2">
-                                        
-                                        <a href="https://github.com/janellariba" 
-                                        class="h-auto bg-purple-500 p-2 rounded-lg text-xs text-center hover:shadow-[0_0_20px_#3b82f6]">See Project</a>
+                                            <a href="https://github.com/janellariba" class="h-auto bg-purple-500 p-2 rounded-lg text-xs text-center hover:shadow-[0_0_20px_#3b82f6]">See Project</a>
                                         </div>
 
                                     </div>
@@ -621,6 +574,7 @@
                             </div>
                         </div>
 
+                        <!-- 05 -->
                         <div class="card relative flex-1 transition-all duration-500 ease-in-out cursor-pointer group" onclick="expandCard(4)">
                             <img src="vid5.gif" class="w-full h-full object-cover rounded-xl" alt="">
                             <div class="absolute inset-0 bg-black/40 text-white opacity-0 group-hover:opacity-100 transition">
@@ -633,23 +587,12 @@
                                 <div class="grid md:grid-cols-2 grid-rows-2 gap-5 h-fit md:px-10 px-2"> 
 
                                     <div class="">
-                                        <h1 class="text-purple-500 text-white font-bold text-center pb-2 text-xs md:text-base">System Function</h1>
-                                        <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                         Tracks the pet’s real-time location using GPS and Arduino.
-                                        </p>
-                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                         Sends alerts when the pet goes beyond the set boundary.
-                                        </p>
-                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                         Displays live location through a connected mobile app.
-                                        </p>
-                                         <p class="h-12 font-thin text-justify md:text-xs text-[10px] w-full isolate aspect-video rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-2 mb-2">
-                                         Monitors system status to ensure continuous tracking.
-                                        </p>
-                                        <div class="pt-2 flex align-center justify-center place-content-end md:hidden">
-                                            <a href="https://docs.google.com/document/d/1AlWbyeD13EHA_pR-n3JOEUNwEIgP_oP1pnswIosT6w4/edit?usp=sharing" class="h-auto bg-purple-500 p-2 rounded-lg text-xs hover:shadow-[0_0_20px_#3b82f6] transition duration-300">See Project</a>
-                                        </div>
-                                        
+                                        <h1 class="text-purple-500 font-bold text-center pb-2 text-xs md:text-base">System Function</h1>
+
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Tracks the pet’s real-time location using GPS and Arduino.</p>
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Sends alerts when the pet goes beyond the set boundary.</p>
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2">Displays live location through a connected mobile app.</p>
+                                        <p class="font-thin text-justify md:text-xs text-[10px] w-full isolate rounded-xl bg-black/50 shadow-lg ring-1 ring-black/5 p-2 mb-2"> Monitors system status to ensure continuous tracking.</p>
                                     </div>
                                     
                                     <div class="bg-transparent opa border-2 border-purple-500 rounded-lg p-4 hidden md:block">
@@ -665,10 +608,8 @@
                                         </div>
    
 
-                                        <div class="flex justify-center gap-2">
-                                        
-                                        <a href="https://docs.google.com/document/d/1AlWbyeD13EHA_pR-n3JOEUNwEIgP_oP1pnswIosT6w4/edit?usp=sharing" 
-                                        class="h-auto bg-purple-500 p-2 rounded-lg text-xs text-center hover:shadow-[0_0_20px_#3b82f6]">See Project</a>
+                                        <div class="flex justify-center gap-2">            
+                                        <a href="https://docs.google.com/document/d/1AlWbyeD13EHA_pR-n3JOEUNwEIgP_oP1pnswIosT6w4/edit?usp=sharing" class="h-auto bg-purple-500 p-2 rounded-lg text-xs text-center hover:shadow-[0_0_20px_#3b82f6]">See Project</a>
                                         </div>
 
                                     </div>
@@ -676,18 +617,151 @@
                                 </div> 
                             </div>
                         </div>
+
                     </div>
 
                 </div>
 
-            </div>
+                <!-- Responsive Cards -->
+                <div class="md:hidden">
+
+                    <div class="relative w-full max-w-md mx-auto bg-black/40 rounded-xl shadow-lg">
+
+                        <!-- 01 -->
+                        <div class="p-5 text-white bg-black/40 rounded-lg mt-5 relative border-2 border-purple-500 delay-[500ms] [animation-iteration-count:infinite] duration-[1000ms] taos:opacity-0" style="background: url('vid1.gif') center/cover no-repeat;">
+
+                            <div class="flex flex-col items-center mb-3">
+                                <h1 class="text-2xl font-bold leading-none">01</h1>
+                                <p class="text-xs font-bold text-center">GAME RENTAL INVENTORY MANAGEMENT SYSTEM</p>
+                            </div>
+
+                            <!-- Details -->
+                            <h2 class="text-purple-400 font-bold text-center text-sm mb-2">System Function</h2>
+                            <div class="space-y-2 text-center">
+                                <p class="text-[11px] bg-black/50 p-2 rounded">Developed using Laravel, Tailwind CSS, and MySQL.</p>
+                                <p class="text-[11px] bg-black/50 p-2 rounded">Manages and tracks game rentals and returns efficiently.</p>
+                                <p class="text-[11px] bg-black/50 p-2 rounded">Monitors item availability to prevent overbooking.</p>
+                                <p class="text-[11px] bg-black/50 p-2 rounded">Provides a responsive and user-friendly interface for smooth navigation.</p>
+                            </div>
+
+                            <!-- Button -->
+                            <div class="pt-4 flex justify-center">
+                                <a href="https://www.canva.com/design/DAGMq8LJ47k/YCZo-IOxLMN5Trw8ps8hyg/edit?utm_content=DAGMq8LJ47k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                                class="bg-purple-500 px-4 py-2 rounded-lg text-xs hover:shadow-lg transition">See Project
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <!-- 02 -->
+                        <div class="p-5 text-white bg-black/50 rounded-lg mt-5 relative border-2 border-purple-500 delay-[600ms] [animation-iteration-count:infinite] duration-[1000ms] taos:opacity-0" style="background: url('vid2.gif') center/cover no-repeat;">
+
+                            <div class="flex flex-col items-center mb-3">
+                                <h1 class="text-2xl font-bold leading-none">02</h1>
+                                <p class="text-xs font-bold text-center">THIRDVISION</p>
+                            </div>
+
+                            <!-- Details -->
+                            <h2 class="text-purple-400 font-bold text-center text-sm mb-2">System Function</h2>
+                            <div class="space-y-2 text-center">
+                                <p class="text-[11px] bg-black/50 p-2 rounded">Employs YOLOv8 for accurate weapon, pose, and facemask detection in real-time.</p>
+                                <p class="text-[11px] bg-black/50 p-2 rounded"> Analyzes aggressor and victim postures to assess potential threats.</p>
+                                <p class="text-[11px] bg-black/50 p-2 rounded">Integrates dynamic dataset augmentation to enhance detection reliability.</p>
+                                <p class="text-[11px] bg-black/50 p-2 rounded">Provides real-time alerts and visuals for police to ensure proactive security.</p>
+                            </div>
+
+                            <!-- Button -->
+                            <div class="pt-4 flex justify-center">
+                                <a href="https://thirdvision.vercel.app/" class="bg-purple-500 px-4 py-2 rounded-lg text-xs hover:shadow-lg transition"> See Project
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <!-- 03 -->
+                        <div class="p-5 text-white bg-black/50 rounded-lg mt-5 relative border-2 border-purple-500 delay-[700ms] [animation-iteration-count:infinite] duration-[1000ms] taos:opacity-0" style="background: url('vid3.gif') center/cover no-repeat;">
+
+                            <div class="flex flex-col items-center mb-3">
+                                <h1 class="text-2xl font-bold leading-none">03</h1>
+                                <p class="text-xs font-bold text-center">STUDENT MANAGEMENT SYSTEM</p>
+                            </div>
+
+                            <!-- Details -->
+                            <h2 class="text-purple-400 font-bold text-center text-sm mb-2">System Function</h2>
+                            <div class="space-y-2 text-center">
+                                <p class="text-[11px] bg-black/50 p-2 rounded">Developed using PHP, MySQL, HTML, and CSS with full CRUD functionality</p>
+                                <p class="text-[11px] bg-black/50 p-2 rounded">Manages student records with add, edit, and delete features.</p>
+                                <p class="text-[11px] bg-black/50 p-2 rounded">Features a clean, user-friendly interface for easy navigation.</p>
+                                <p class="text-[11px] bg-black/50 p-2 rounded">Focused on web development and database management skills.</p>
+                            </div>
+
+                            <!-- Button -->
+                            <div class="pt-4 flex justify-center">
+                                <a href="https://github.com/janellariba" class="bg-purple-500 px-4 py-2 rounded-lg text-xs hover:shadow-lg transition">See Project
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 04 -->
+                        <div class="p-5 text-white bg-black/50 rounded-lg mt-5 relative border-2 border-purple-500 delay-[800ms] [animation-iteration-count:infinite] duration-[1000ms] taos:opacity-0" style="background: url('vid4.gif') center/cover no-repeat;">
+
+                            <div class="flex flex-col items-center mb-3">
+                                <h1 class="text-2xl font-bold leading-none">04</h1>
+                                <p class="text-xs font-bold text-center">RECREATION OF JIMDO WEBSITE</p>
+                            </div>
+
+                            <!-- Details -->
+                            <h2 class="text-purple-400 font-bold text-center text-sm mb-2">System Function</h2>
+                            <div class="space-y-2 text-center">
+                                <p class="text-[11px] bg-black/50 p-2 rounded"> The website has a responsive layout that adapts to all screen sizes.</p>
+                                <p class="text-[11px] bg-black/50 p-2 rounded">Users can easily navigate through multiple pages with a clear menu.</p>
+                                <p class="text-[11px] bg-black/50 p-2 rounded">Content like images and text is displayed in a clean, organized way.</p>
+                                <p class="text-[11px] bg-black/50 p-2 rounded">It replicates the Jimdo website with consistent styling and interactive elements.</p>
+                            </div>
+
+                            <!-- Button -->
+                            <div class="pt-4 flex justify-center">
+                                <a href="https://github.com/janellariba" class="bg-purple-500 px-4 py-2 rounded-lg text-xs hover:shadow-lg transition">See Project
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <!-- 05 -->
+                        <div class="p-5 text-white bg-black/50 rounded-lg mt-5 relative border-2 border-purple-500 delay-[900ms] [animation-iteration-count:infinite] duration-[1000ms] taos:opacity-0" style="background: url('vid5.gif') center/cover no-repeat;">
+
+                            <div class="flex flex-col items-center mb-3">
+                                <h1 class="text-2xl font-bold leading-none">05</h1>
+                                <p class="text-xs font-bold text-center">ARDUINO-BASED REAL-TIME PET TRACKING VEST SYSTEM</p>
+                            </div>
+
+                            <!-- Details -->
+                            <h2 class="text-purple-400 font-bold text-center text-sm mb-2">System Function</h2>
+                            <div class="space-y-2 text-center">
+                                <p class="text-[11px] bg-black/50 p-2 rounded"> Tracks the pet’s real-time location using GPS and Arduino.</p>
+                                <p class="text-[11px] bg-black/50 p-2 rounded"> Sends alerts when the pet goes beyond the set boundary.</p>
+                                <p class="text-[11px] bg-black/50 p-2 rounded">Displays live location through a connected mobile app.</p>
+                                <p class="text-[11px] bg-black/50 p-2 rounded">Monitors system status to ensure continuous tracking.</p>
+                            </div>
+
+                            <!-- Button -->
+                            <div class="pt-4 flex justify-center">
+                                <a href="https://docs.google.com/document/d/1AlWbyeD13EHA_pR-n3JOEUNwEIgP_oP1pnswIosT6w4/edit?usp=sharing"class="bg-purple-500 px-4 py-2 rounded-lg text-xs hover:shadow-lg transition">See Project
+                                </a>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
 
          </section>
 
          <!-- contact -->
        <section id="contact" class="w-full h-fit p-10 bg-purple-800 ">
             
-            <div class="max-w-6xl grid md:grid-cols-2 gap-10 m-auto md:p-10">
+            <div class="max-w-6xl grid md:grid-cols-2 gap-10 m-auto place-items-center">
                 <div class="w-full place-items-center pt-10 delay-[50ms] [animation-iteration-count:infinite] duration-[600ms] taos:scale-[0.8] taos:opacity-0" data-taos-offset="100">
                     <h1 class="text-purple-200 md:text-3xl text-2xl font-bold text-center border-b-4 border-purple-200 mb-5">Get in Touch</h1>
                     <p class="md:text-base text-xs text-justify text-purple-200 pb-5">I'm currently open to new opportunities and collaborations. Whether you have a project in mind, want to discuss potential roles, or simply wish to connect, feel free to reach out. I look forward to hearing from you!</p>
